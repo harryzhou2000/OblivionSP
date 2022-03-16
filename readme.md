@@ -5,6 +5,8 @@
 
 **MAKE SURE YOU HAVE GONE THROUGH THE FLIGHT MANUAL (at least part 2.1. and 2.2.) BEFORE FLYING**
 
+**Design is not validated for VR**
+
 [GitHub Repo page](https://github.com/harryzhou2000/OblivionSP) illustrate the same document but with better formatting. The table of functions in 3. is formatted correctly there.
 
 
@@ -36,7 +38,7 @@ This is too complicated. I shall Explain in 2.
 All units are nautical.
 
 ### 2.1. Conventional Takeoff and Landing
-The front gear is short causing a minus AoA in taxiing, so you must activate **AC4** for *vector nozzles* to gain extra pitch torque.
+The front gear is short causing a minus AoA in taxiing, so you must activate **AC4** for *vector nozzles* to gain extra pitch torque. Note that **Roll** gives slight front gear turn here. 
 
 **LandingGear** is bond to flaps, and flying under 300 kts is tricky due to some bad features of the flaps, so take care and mind the speed when landing.
 
@@ -143,7 +145,7 @@ The map has variable zooming levels, and a length legend is shown on the map to 
 The objects out side the map region are collapsed on the boundary, being dimmer than normal.
 
 #### 2.5.5. Ejection
-Tired of sitting in the cockpit? Use **AC3** to toss yourself (or the seat actually) out! Use camera 'Seat' to gain a 3rd person view of ejection.
+Tired of sitting in the cockpit? Use **AC3** to toss yourself (or the seat actually) out! Use camera 'Seat' to gain a 3rd person view of ejection. Tossing rocket and deploying parachute is fully automatic.
 
 ## 3. List of Functions
 
@@ -203,4 +205,4 @@ Ejection warning sign from [Fc-912C](https://www.simpleplanes.com/a/e6zXvN/Fc-91
 
 ## Why I made this
 
-HF-12 was an old design of mine years ago, but gradually renewed as the game updates. In the past year of 2021, I haven't played SP much, but so I missed most of the fancy updates. As soon as I was aware of the exciting new features, I started working on the cockpit and flight controls, and the outcome of 40 hrs of work is Oblivion.
+HF-12 was an old design of mine years ago, but was gradually renewed as the game updates. It was initially a near-future concept of J-20. In the past year of 2021, I haven't played SP much, but so I missed most of the fancy updates. As soon as I was aware of the exciting new features, I started working on the cockpit and flight controls, and the current design is Oblivion.
