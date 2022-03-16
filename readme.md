@@ -5,6 +5,9 @@
 
 **MAKE SURE YOU HAVE GONE THROUGH THE FLIGHT MANUAL (at least part 2.1. and 2.2.) BEFORE FLYING**
 
+[GitHub Repo page](https://github.com/harryzhou2000/OblivionSP) illustrate the same document but with better formatting. The table of functions in 3. is formatted correctly there.
+
+
 ## 1. HF-12 Oblivion
 ![](https://i.postimg.cc/d3KjbLJ6/MainView.jpg)
 
@@ -119,7 +122,7 @@ The right part of cockpit (right click open to get large image):
 You can set a customized waypoint on the *Map*, if you know the latitude & longitude in the scene. Here are the steps (assuming you are bound to go to Kraken (74429,97344)):
 1. Goto the *External-Nav-Map Button Region*, press **NAV** to activate navigation mode, then the waypoint is shown, but is set to (0,0), which can be seen below the *Map*.
 2. Press **Set Lat**, so that it is 'on' (being pressed down), then type 74429 in the **Num Pad**. You can see what you have type in the small screen at the top of **Num Pad**. If you got it wrong, use **DEL** to delete last digit, or use **C** to clear all. Finally, press the **Enter** in **Num Pad** to send the buffer to the latitude setting, then '74429' should appear on the waypoint information below *Map*. Last, **Deactivate** the **Set Lat** button, so that further operations do not affect the latitude setting.
-3. Use button **Set Lon** and **Num Pad** to do the same for longitude. (Note: if you want to type a negative number, use **-** button in **Num Pad** to toggle the sign of the num pad buffer.)
+3. Use button **Set Lon** and **Num Pad** to do the same for longitude (enter 97344). (Note: if you want to type a negative number, use **-** button in **Num Pad** to toggle the sign of the num pad buffer.)
 
 Here, your way point is where you want to be, and you can see where it is on the *Map*.
 
@@ -128,6 +131,9 @@ You can use **HOLD XXX** in *Autopilot Button Region* to hold altitude, speed (G
 - Press once **CUR XXX** in *Autopilot Button Region* to set the value to current flight data (where XXX can be ALT, SPD or HDG), or 
 - Toggle on the button **SET XXX** to manually set the value with **Num Pad** like in 2.5.2. Remember to toggle of that **SET XXX** after finishing the manual setting.
 
+Note that autopilot is off if you are far from level, you must have less than 45° of pitch and roll to enter autopilot.
+
+You can still control the attitude a bit when autopilot is on. Let go of stick to let autopilot do right.
 
 When navigation mode is on, you can not set the autopilot target heading, for it is always overwritten by the waypoint's heading.
 
@@ -156,7 +162,7 @@ https://github.com/harryzhou2000/OblivionSP
 |**AC6**==**Canopy** in *External-Nav-Map*|Toggle Canopy|
 |**AC7**==**TOSS HDP** in *Misc*|Jettison Hard-points|
 |**AC8**==**Beacon** in *Misc*|Toggle Lights|
-|**Catapult** in *Misc*|Link Catapult|
+|**ActivateCatapult**==**Catapult** in *Misc*|Link Catapult|
 |**Launch Countermeasures**==**Flare** in *Misc*|Launch Countermeasures|
 |**Previous/Next Weapon**==**PREV/NEXT WPN** in *Target*|Prev/Next Weapon Selection|
 |**Cycle Targeting Mode**==**TGT MODE** in *Target*|Cycle Targeting Mode|
@@ -178,10 +184,16 @@ https://github.com/harryzhou2000/OblivionSP
 |**X** near throttle|Set throttle to 0|
 |**O** near throttle|Set throttle to Max|
 
-## 4. Label Generation
+**VTOL** only controls VTOL with **AC1**, **Trim** only controls pitch trim.
+**Roll** **Yaw** **Pitch** **Throttle** are what they are supposed to do. Note that throttle's behavior differs slightly in hovering, see 2.3.
+
+
+## 4. Label Generation and Variable Coding
 
 This one-piece HUD's label contains over 50kB data, and the map likewise. I certainly didn't code it by hand, the python code can also be found here:
 https://github.com/harryzhou2000/OblivionSP
+
+There are nearly 90 variables in the project, so they are divided by 'Comment' variables that describe the following section.
 
 ## 5. Credit
 
